@@ -41,6 +41,7 @@ df["Churn"].value_counts().plot(kind="bar")
 plt.title("Customer Churn Distribution")
 plt.xlabel("Churn")
 plt.ylabel("Number of customers")
+plt.savefig("eda_churn_distribution.png")
 plt.show()
 
 #2. Tenure Distribution
@@ -48,6 +49,7 @@ df["tenure"].plot(kind="hist",bins=20)
 plt.title("Customer tenure Distribution")
 plt.xlabel("Tenure(months)")
 plt.ylabel("Number of customers")
+plt.savefig("eda_tenure_distribution.png")
 plt.show()
 
 # 3. Monthly Charges by Churn
@@ -56,6 +58,7 @@ plt.title('Monthly Charges by Churn')
 plt.suptitle('')
 plt.xlabel('Churn')
 plt.ylabel('Monthly Charges')
+plt.savefig("eda_monthly_charges_by_churn.png")
 plt.show()
 
 # 4. Churn by Contract Type
@@ -64,5 +67,6 @@ plt.title('Churn by Contract Type')
 plt.xlabel('Contract Type')
 plt.xticks(rotation=0)
 plt.ylabel('Number of Customers')
+plt.savefig("eda_churn_by_contract.png")
 plt.show()
 

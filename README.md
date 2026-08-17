@@ -39,3 +39,20 @@ These issues could lead to errors during analysis and machine learning. Converti
 
 The goal was to make the dataset clean, consistent, and suitable for further analysis and machine learning.
 
+## Exploratory Data Analysis
+
+### 1. Customer Churn Distribution
+
+![Customer Churn Distribution](eda_churn_distribution.png)
+
+### 2. Customer Tenure Distribution
+
+![Customer Tenure Distribution](eda_tenure_distribution.png)
+
+### 3. Monthly Charges by Churn
+
+![Monthly Charges by Churn](eda_monthly_charges_by_churn.png)
+
+### 4. Churn by Contract Type
+
+![Churn by Contract Type](eda_churn_by_contract.png)
