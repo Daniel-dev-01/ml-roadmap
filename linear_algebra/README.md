@@ -50,3 +50,6 @@ A simple linear model can be represented as:
 
 - Python
 - NumPy
+## Progress
+Linear algebra practice completed as part of my Machine Learning foundation.
+
