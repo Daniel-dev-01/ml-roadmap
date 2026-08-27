@@ -53,3 +53,6 @@ A simple linear model can be represented as:
 ## Progress
 Linear algebra practice completed as part of my Machine Learning foundation.
 
+## Git Practice
+
+This change was made on a separate Git branch.
