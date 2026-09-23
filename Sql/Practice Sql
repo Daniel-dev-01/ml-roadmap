@@ -1,0 +1,61 @@
+-- SQL First Contact
+-- Basic filtering
+
+SELECT *
+FROM customers
+WHERE churn = 1;
+
+SELECT *
+FROM customers
+WHERE churn = 1
+AND monthly_charges > 70;
+
+
+-- GROUP BY
+
+SELECT contract, COUNT(*)
+FROM customers
+GROUP BY contract;
+
+
+-- Aggregations
+
+SELECT contract,
+       COUNT(*),
+       AVG(monthly_charges)
+FROM customers
+WHERE churn = 1
+GROUP BY contract;
+
+
+-- HAVING
+
+SELECT contract,
+       COUNT(*),
+       AVG(monthly_charges)
+FROM customers
+WHERE churn = 1
+GROUP BY contract
+HAVING AVG(monthly_charges) > 70;
+
+
+-- ORDER BY
+
+SELECT contract,
+       COUNT(*),
+       AVG(monthly_charges)
+FROM customers
+WHERE churn = 1
+GROUP BY contract
+HAVING AVG(monthly_charges) > 70
+ORDER BY AVG(monthly_charges) DESC;
+
+
+-- JOIN
+
+SELECT customers.customer_id,
+       customers.contract,
+       payments.payment
+FROM customers
+JOIN payments
+ON customers.customer_id = payments.customer_id;
